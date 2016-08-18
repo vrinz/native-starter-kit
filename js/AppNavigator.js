@@ -15,8 +15,11 @@ import Home from './components/home/';
 import BlankPage from './components/blankPage/';
 import Calendars1 from './components/calendar/';
 import BookingHistories from './components/bookingHistories/';
+import BookingStatus from './components/bookingStatus/';
 import SplashPage from './components/splashscreen/';
 import SideBar from './components/sideBar';
+import Settings from './components/settings';
+import Logout from './components/logout';
 import { statusBarColor } from "./themes/base-theme";
 
 Navigator.prototype.replaceWithAnimation = function (route) {
@@ -144,10 +147,16 @@ class AppNavigator extends Component {
                 return <Home navigator={navigator} />;
             case 'blankPage':
                 return <BlankPage navigator={navigator} />;
+            case 'bookingStatus':
+                return <BookingStatus navigator={navigator} />;
             case 'calendar':
                 return <Calendars1 navigator={navigator} />;
             case 'bookingHistories':
                 return <BookingHistories navigator={navigator} />;
+            case 'settings':
+                return <Settings navigator={navigator} />;
+            case 'logout':
+                return <Logout navigator={navigator} />;
             default :
                 return <Login navigator={navigator}  />;
         }
