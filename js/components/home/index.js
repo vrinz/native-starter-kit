@@ -21,21 +21,21 @@ class Home extends Component {
 
     render() {
         return (
-            <Container theme={myTheme}style={{backgroundColor: '#565051'}}>
+            <Container theme={myTheme}style={{backgroundColor: '#fff'}}>
                 <Header>
                     <Button transparent onPress={() => this.replaceRoute('login')}>
-                        <Icon name='ios-power' />
+                        <Icon name={'ios-person'} style={{color: '#fff'}} />
                     </Button>
-                    
-                    <Title>Home</Title>
-                    
+
+                    <Title><Text style={styles.title}>Name of Driver</Text></Title>
+
                     <Button transparent onPress={this.props.openDrawer}>
-                        <Icon name='ios-menu' />
+                        <Icon name={'ios-menu'} style={{color: '#fff'}}/>
                     </Button>
                 </Header>
-                
+
                 <Content>
-                    <Grid style={{marginTop: 20}}>
+                    {/* <Grid style={{marginTop: 20}}>
                         <Row>
                             <View style={styles.row}>
                                 <Text style={styles.text}>
@@ -78,7 +78,7 @@ class Home extends Component {
                                 </Text>
                             </View>
                         </Row>
-                    </Grid>
+                    </Grid> */}
                 </Content>
             </Container>
         )
