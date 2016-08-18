@@ -31,14 +31,14 @@ class Login extends Component {
             <Container theme={myTheme}>
                 <View style={styles.container}>
                     <Content>
-                        <Image source={require('../../../images/shadow.png')} style={styles.shadow}>
+                    <Image style={styles.imgstl} source={require('../../../images/metro-limo-logo.png')}></Image>
                             <View style={styles.bg}>
                                 <InputGroup style={styles.input}>
-                                    <Icon name='ios-person' />
-                                    <Input placeholder='EMAIL' />
+                                    <Icon name={'ios-person'} style={{color: '#000'}}  />
+                                    <Input placeholder={"DRIVER'S ID"}  />
                                 </InputGroup>
                                 <InputGroup style={styles.input}>
-                                    <Icon name='ios-unlock-outline' />
+                                    <Icon name={'ios-lock-outline'} style={{color: '#000'}} />
                                     <Input
                                         placeholder='PASSWORD'
                                         secureTextEntry={true}
@@ -48,7 +48,6 @@ class Login extends Component {
                                     Login
                                 </Button>
                             </View>
-                        </Image>
                     </Content>
                 </View>
             </Container>

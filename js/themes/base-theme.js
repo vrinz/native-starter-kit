@@ -11,7 +11,7 @@ module.exports = {
     brandSidebar: "#252932",
 
     inverseTextColor: "#000",
-    textColor: "#fff",
+    textColor: "#000",
 
     fontSizeBase: 15,
     titleFontSize: 17,
@@ -96,13 +96,14 @@ module.exports = {
 
     borderWidth: 1,
 
+
     get inputColor () {
         return this.textColor;
     },
     get inputColorPlaceholder () {
         return 'rgba(0, 0, 0, 0.7)';
     },
-    inputBorderColor: "#fff",
+    inputBorderColor: "#1aa3ff",
     inputHeightBase: 40,
     inputGroupMarginBottom: 10,
     inputPaddingLeft: 5,

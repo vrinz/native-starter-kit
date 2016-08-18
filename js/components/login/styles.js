@@ -14,18 +14,18 @@ module.exports = StyleSheet.create({
         bottom: 0,
         left: 0,
         right: 0,
-        backgroundColor: '#453F41'
+        backgroundColor: '#fff'
     },
     shadow: {
         flex: 1,
         width: null,
         height: null,
-        backgroundColor: 'transparent'
+        backgroundColor: '#453F41'
     },
     bg: {
         flex: 1,
-        marginTop: deviceHeight/1.75,
-        backgroundColor: '#453F41',
+        marginTop:150,
+        backgroundColor: '#fff',
         paddingTop: 20,
         paddingLeft: 10,
         paddingRight: 10,
@@ -35,6 +35,15 @@ module.exports = StyleSheet.create({
     input: {
         marginBottom: 20
     },
+
+   imgstl:{
+     position: 'relative',
+     width: 300,
+     height: 85,
+     alignSelf: 'center',
+     marginTop: 150
+   },
+
     btn: {
         marginTop: 20,
         alignSelf: 'center'
