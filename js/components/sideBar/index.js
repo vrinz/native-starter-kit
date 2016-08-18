@@ -14,7 +14,7 @@ import styles from './style';
 class SideBar extends Component {
 
     navigateTo(route) {
-        this.props.closeDrawer(); 
+        this.props.closeDrawer();
         this.props.replaceOrPushRoute(route);
     }
 
@@ -26,7 +26,13 @@ class SideBar extends Component {
                         <Text>Home</Text>
                     </ListItem>
                     <ListItem onPress={() => this.navigateTo('blankPage')} >
-                        <Text>Blank Page</Text>
+                        <Text>Bookings List</Text>
+                    </ListItem>
+                    <ListItem onPress={() => this.navigateTo('bookingHistories')} >
+                        <Text>Booking Histories</Text>
+                    </ListItem>
+                    <ListItem onPress={() => this.navigateTo('calendar')} >
+                        <Text>Calendar</Text>
                     </ListItem>
                 </List>
             </Content>

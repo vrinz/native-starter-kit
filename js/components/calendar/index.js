@@ -11,7 +11,7 @@ import { Container, Header, Title, Content, Text, Button, Icon } from 'native-ba
 
 import myTheme from '../../themes/base-theme';
 
-class BlankPage extends Component {
+class Calendars1 extends Component {
 
     popRoute() {
         this.props.popRoute();
@@ -25,7 +25,7 @@ class BlankPage extends Component {
                         <Icon name={'ios-arrow-back'} style={{color: '#fff'}} />
                     </Button>
 
-                    <Title><Text style={{color: '#fff'}}>Bookings List</Text></Title>
+                    <Title><Text style={{color: '#fff'}}>Calendar</Text></Title>
 
                     <Button transparent onPress={this.props.openDrawer}>
                         <Icon name={'ios-menu'} style={{color: '#fff'}} />
@@ -49,4 +49,4 @@ function bindAction(dispatch) {
     }
 }
 
-export default connect(null, bindAction)(BlankPage);
+export default connect(null, bindAction)(Calendars1);
