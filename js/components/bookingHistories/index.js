@@ -25,7 +25,7 @@ class BookingHistories extends Component {
                         <Icon name={'ios-arrow-back'} style={{color: '#fff'}} />
                     </Button>
 
-                    <Title><Text style={{color: '#fff'}}>Booking Histories</Text></Title>
+                    <Title><Text style={{color: '#fff', fontSize: 18}}>Booking Histories</Text></Title>
 
                     <Button transparent onPress={this.props.openDrawer}>
                         <Icon name={'ios-menu'} style={{color: '#fff'}} />

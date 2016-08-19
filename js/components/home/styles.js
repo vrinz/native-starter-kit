@@ -18,6 +18,7 @@ module.exports = StyleSheet.create({
     },
 
     title:{
-      color: '#fff'
+      color: '#fff',
+      fontSize: 18
     }
 });

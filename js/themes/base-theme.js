@@ -100,11 +100,13 @@ module.exports = {
     get inputColor () {
         return this.textColor;
     },
+
     get inputColorPlaceholder () {
         return 'rgba(0, 0, 0, 0.7)';
     },
+
     inputBorderColor: "#1aa3ff",
-    inputHeightBase: 40,
+    inputHeightBase: 45,
     inputGroupMarginBottom: 10,
     inputPaddingLeft: 5,
     get inputPaddingLeftIcon () {

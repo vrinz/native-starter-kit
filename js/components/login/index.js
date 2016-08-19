@@ -35,7 +35,7 @@ class Login extends Component {
                             <View style={styles.bg}>
                                 <InputGroup style={styles.input}>
                                     <Icon name={'ios-person'} style={{color: '#000'}}  />
-                                    <Input placeholder={"DRIVER'S ID"}  />
+                                    <Input placeholder="DRIVER'S ID"  />
                                 </InputGroup>
                                 <InputGroup style={styles.input}>
                                     <Icon name={'ios-lock-outline'} style={{color: '#000'}} />

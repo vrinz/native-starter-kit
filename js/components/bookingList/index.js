@@ -7,11 +7,14 @@ import { connect } from 'react-redux';
 import { openDrawer } from '../../actions/drawer';
 import { popRoute } from '../../actions/route';
 
-import { Container, Header, Title, Content, Text, Button, Icon } from 'native-base';
+import {Image}  from 'react-native';
+
+import { Container, Header, Title, Content, Text, Button, Icon} from 'native-base';
 
 import myTheme from '../../themes/base-theme';
+import styles from './styles';
 
-class BlankPage extends Component {
+class BookingList extends Component {
 
     popRoute() {
         this.props.popRoute();
@@ -25,18 +28,18 @@ class BlankPage extends Component {
                         <Icon name={'ios-arrow-back'} style={{color: '#fff'}} />
                     </Button>
 
-                    <Title><Text style={{color: '#fff'}}>Bookings List</Text></Title>
+                    <Title><Text style={{color: '#fff', fontSize: 18}}>Bookings List</Text></Title>
 
                     <Button transparent onPress={this.props.openDrawer}>
                         <Icon name={'ios-menu'} style={{color: '#fff'}} />
                     </Button>
                 </Header>
 
-                <Content padder>
-                    <Text>
-                        Create Something Awesome . . .
-                    </Text>
+                <Content>
+    
+
                 </Content>
+
             </Container>
         )
     }
@@ -49,4 +52,4 @@ function bindAction(dispatch) {
     }
 }
 
-export default connect(null, bindAction)(BlankPage);
+export default connect(null, bindAction)(BookingList);

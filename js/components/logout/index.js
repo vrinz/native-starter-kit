@@ -25,7 +25,7 @@ class Logout extends Component {
                         <Icon name={'ios-arrow-back'} style={{color: '#fff'}} />
                     </Button>
 
-                    <Title><Text style={{color: '#fff'}}>Logout</Text></Title>
+                    <Title><Text style={{color: '#fff', fontSize: 18}}>Logout</Text></Title>
 
                     <Button transparent onPress={this.props.openDrawer}>
                         <Icon name={'ios-menu'} style={{color: '#fff'}} />

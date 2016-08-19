@@ -12,7 +12,7 @@ import Navigator from 'Navigator';
 
 import Login from './components/login/';
 import Home from './components/home/';
-import BlankPage from './components/blankPage/';
+import BookingList from './components/bookingList/';
 import Calendars1 from './components/calendar/';
 import BookingHistories from './components/bookingHistories/';
 import BookingStatus from './components/bookingStatus/';
@@ -145,8 +145,8 @@ class AppNavigator extends Component {
                 return <Login navigator={navigator} />;
             case 'home':
                 return <Home navigator={navigator} />;
-            case 'blankPage':
-                return <BlankPage navigator={navigator} />;
+            case 'bookingList':
+                return <BookingList navigator={navigator} />;
             case 'bookingStatus':
                 return <BookingStatus navigator={navigator} />;
             case 'calendar':

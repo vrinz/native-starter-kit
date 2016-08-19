@@ -35,50 +35,7 @@ class Home extends Component {
                 </Header>
 
                 <Content>
-                    {/* <Grid style={{marginTop: 20}}>
-                        <Row>
-                            <View style={styles.row}>
-                                <Text style={styles.text}>
-                                    React Native starter kit
-                                </Text>
-                            </View>
-                        </Row>
-                        <Row>
-                            <View style={styles.row}>
-                                <Text style={styles.text}>
-                                    with RN Navigator
-                                </Text>
-                            </View>
-                        </Row>
-                        <Row>
-                            <View style={styles.row}>
-                                <Text style={styles.text}>
-                                    NB Easy Grid
-                                </Text>
-                            </View>
-                        </Row>
-                        <Row>
-                            <View style={styles.row}>
-                                <Text style={styles.text}>
-                                    NativeBase
-                                </Text>
-                            </View>
-                        </Row>
-                        <Row>
-                            <View style={styles.row}>
-                                <Text style={styles.text}>
-                                    CodePush
-                                </Text>
-                            </View>
-                        </Row>
-                        <Row>
-                            <View style={styles.row}>
-                                <Text style={styles.text}>
-                                    Redux
-                                </Text>
-                            </View>
-                        </Row>
-                    </Grid> */}
+                  
                 </Content>
             </Container>
         )

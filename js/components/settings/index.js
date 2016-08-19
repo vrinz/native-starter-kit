@@ -25,7 +25,7 @@ class Settings extends Component {
                         <Icon name={'ios-arrow-back'} style={{color: '#fff'}} />
                     </Button>
 
-                    <Title><Text style={{color: '#fff'}}>Settings</Text></Title>
+                    <Title><Text style={{color: '#fff', fontSize: 18}}>Settings</Text></Title>
 
                     <Button transparent onPress={this.props.openDrawer}>
                         <Icon name={'ios-menu'} style={{color: '#fff'}} />
