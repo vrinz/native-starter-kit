@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import { openDrawer } from '../../actions/drawer';
 import { popRoute } from '../../actions/route';
 
-import { Container, Header, Title, Content, Text, Button, Icon } from 'native-base';
+import { Container, Header, Title, Content, Text, Button, Icon, View } from 'native-base';
 
 import myTheme from '../../themes/base-theme';
 
@@ -32,10 +32,8 @@ class Settings extends Component {
                     </Button>
                 </Header>
 
-                <Content padder>
-                    <Text>
-                        Create Something Awesome . . .
-                    </Text>
+                <Content>
+            
                 </Content>
             </Container>
         )
