@@ -15,6 +15,7 @@ module.exports = StyleSheet.create({
     },
 
 		liitem: {
+			flex:1,
 			borderBottomWidth: 0,
 			paddingTop: 25,
 			paddingBottom: 25,

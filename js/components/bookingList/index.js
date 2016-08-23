@@ -6,18 +6,25 @@ import { connect } from 'react-redux';
 
 import { openDrawer } from '../../actions/drawer';
 import { popRoute } from '../../actions/route';
+import { closeDrawer } from '../../actions/drawer';
+import { replaceOrPushRoute } from '../../actions/route';
 
 import {Image}  from 'react-native';
 
-import { Container, Header, Title, Content, Text, Button, Icon, View} from 'native-base';
+import { Container, Header, Title, Content, Text, Button, Icon, View, ListItem, List} from 'native-base';
 
 import myTheme from '../../themes/base-theme';
-import styles from './styles';
+import styles from './style';
 
 class BookingList extends Component {
 
     popRoute() {
         this.props.popRoute();
+    }
+
+    navigateTo(route) {
+        this.props.closeDrawer();
+        this.props.replaceOrPushRoute(route);
     }
 
     render() {
@@ -36,11 +43,34 @@ class BookingList extends Component {
                 </Header>
 
                 <Content>
-                <View style={{flex: 1}}>
-                   <View style={{height: 202, backgroundColor: 'powderblue'}}><Text> testing</Text></View>
+              { /* <View style={{flex: 1}}>
+                   <View style={{height: 202, backgroundColor: 'powderblue'}}>
+                      <Text> testing</Text>
+                      <Text> testing2</Text>
+                      <Text> testing2</Text>
+                      <Text> testing2</Text>
+                      <Text> testing2</Text>
+                   </View>
                    <View style={{height: 202, backgroundColor: 'skyblue'}}></View>
                    <View style={{height: 202, backgroundColor: 'powderblue'}}></View>
-                </View>
+                   <View style={{height: 202, backgroundColor: 'skyblue'}}><Text> testing</Text></View>
+                   <View style={{height: 202, backgroundColor: 'powderblue'}}></View>
+                   <View style={{height: 202, backgroundColor: 'skyblue'}}><Text> testing</Text></View>
+                </View> */}
+
+                <ListItem style={styles.liitem1} onPress={() => this.navigateTo('bookingList1')} >
+                      <Image style={styles.imgstl1} source={require('../../../images/booking-1.png')}></Image>
+                </ListItem>
+                <ListItem style={styles.liitem2} onPress={() => this.navigateTo('calendar')} >
+                      <Image style={styles.imgstl2} source={require('../../../images/booking-2.png')}></Image>
+                </ListItem>
+                <ListItem style={styles.liitem1} onPress={() => this.navigateTo('settings')} >
+                      <Image style={styles.imgstl1} source={require('../../../images/booking-3.png')}></Image>
+                </ListItem>
+                <ListItem style={styles.liitem2}>
+                  <Image style={styles.imgstl2} source={require('../../../images/booking-4.png')}></Image>
+                </ListItem>
+
                 </Content>
 
             </Container>
@@ -51,7 +81,9 @@ class BookingList extends Component {
 function bindAction(dispatch) {
     return {
         openDrawer: ()=>dispatch(openDrawer()),
-        popRoute: () => dispatch(popRoute())
+        popRoute: () => dispatch(popRoute()),
+        closeDrawer: ()=>dispatch(closeDrawer()),
+        replaceOrPushRoute:(route)=>dispatch(replaceOrPushRoute(route))
     }
 }
 

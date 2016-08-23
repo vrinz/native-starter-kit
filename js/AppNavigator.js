@@ -13,6 +13,7 @@ import Navigator from 'Navigator';
 import Login from './components/login/';
 import Home from './components/home/';
 import BookingList from './components/bookingList/';
+import BookingList1 from './components/bookingList1/';
 import Calendars1 from './components/calendar/';
 import BookingHistories from './components/bookingHistories/';
 import BookingStatus from './components/bookingStatus/';
@@ -147,6 +148,8 @@ class AppNavigator extends Component {
                 return <Home navigator={navigator} />;
             case 'bookingList':
                 return <BookingList navigator={navigator} />;
+            case 'bookingList1':
+                return <BookingList1 navigator={navigator} />;
             case 'bookingStatus':
                 return <BookingStatus navigator={navigator} />;
             case 'calendar':

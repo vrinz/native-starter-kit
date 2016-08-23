@@ -6,7 +6,12 @@ var React = require('react-native');
 var { StyleSheet } = React;
 
 module.exports = StyleSheet.create({
-    container:{
-      marginTop: 50
-    }
+
+	imgstl1:{
+    width:420,
+		height: 450,
+		alignSelf: 'center',
+		marginTop: 20,
+		marginBottom:0
+	},
 });

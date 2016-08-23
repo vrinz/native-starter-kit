@@ -123,7 +123,7 @@ module.exports = {
 
     contentPadding: 10,
 
-    listBorderColor: "#ddd",
+    listBorderColor: "#58575C",
     listDividerBg: "#F5F5F5",
     listItemPadding: 15,
     listNoteColor: "#58575C",
