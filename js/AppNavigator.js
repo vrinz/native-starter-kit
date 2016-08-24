@@ -21,7 +21,7 @@ import BookingList1 from './components/bookingList1/';
 import BookingList2 from './components/bookingList2/';
 import BookingList3 from './components/bookingList3/';
 import BookingList4 from './components/bookingList4/';
-import Calendars1 from './components/calendar/';
+import App from './components/calendar/';
 import BookingHistories from './components/bookingHistories/';
 import BookingStatus from './components/bookingStatus/';
 import SplashPage from './components/splashscreen/';
@@ -156,7 +156,7 @@ class AppNavigator extends Component {
             case 'availableBooking1':
                 return <AvailableBooking1 navigator={navigator} />;
             case 'availableBooking2':
-                return <AvailableBooking2 navigator={navigator} />;    
+                return <AvailableBooking2 navigator={navigator} />;
             case 'availableBooking3':
                 return <AvailableBooking3 navigator={navigator} />;
             case 'availableBooking4':
@@ -174,7 +174,7 @@ class AppNavigator extends Component {
             case 'bookingStatus':
                 return <BookingStatus navigator={navigator} />;
             case 'calendar':
-                return <Calendars1 navigator={navigator} />;
+                return <App navigator={navigator} />;
             case 'bookingHistories':
                 return <BookingHistories navigator={navigator} />;
             case 'settings':
