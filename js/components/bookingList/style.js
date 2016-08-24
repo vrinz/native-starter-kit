@@ -17,7 +17,23 @@ module.exports = StyleSheet.create({
 
 	imgstl2:{
 		width:380,
-		height: 170,
+		height: 185,
+		alignSelf: 'center',
+		marginTop: 0,
+		marginBottom:0
+	},
+
+	imgstl3:{
+    width:380,
+		height: 200,
+		alignSelf: 'center',
+		marginTop: 0,
+		marginBottom:0
+	},
+
+	imgstl4:{
+		width:390,
+		height: 200,
 		alignSelf: 'center',
 		marginTop: 0,
 		marginBottom:0

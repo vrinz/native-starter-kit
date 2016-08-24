@@ -14,6 +14,9 @@ import Login from './components/login/';
 import Home from './components/home/';
 import BookingList from './components/bookingList/';
 import BookingList1 from './components/bookingList1/';
+import BookingList2 from './components/bookingList2/';
+import BookingList3 from './components/bookingList3/';
+import BookingList4 from './components/bookingList4/';
 import Calendars1 from './components/calendar/';
 import BookingHistories from './components/bookingHistories/';
 import BookingStatus from './components/bookingStatus/';
@@ -150,6 +153,12 @@ class AppNavigator extends Component {
                 return <BookingList navigator={navigator} />;
             case 'bookingList1':
                 return <BookingList1 navigator={navigator} />;
+            case 'bookingList2':
+                return <BookingList2 navigator={navigator} />;
+            case 'bookingList3':
+                return <BookingList3 navigator={navigator} />;
+            case 'bookingList4':
+                return <BookingList4 navigator={navigator} />;
             case 'bookingStatus':
                 return <BookingStatus navigator={navigator} />;
             case 'calendar':
