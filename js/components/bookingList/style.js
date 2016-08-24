@@ -17,7 +17,7 @@ module.exports = StyleSheet.create({
 
 	imgstl2:{
 		width:380,
-		height: 185,
+		height: 200,
 		alignSelf: 'center',
 		marginTop: 0,
 		marginBottom:0
@@ -43,14 +43,14 @@ module.exports = StyleSheet.create({
 			borderBottomWidth: 1,
       marginTop:0,
 			marginBottom: 0,
-			backgroundColor: 'skyblue'
+			backgroundColor: '#FFFFFF'
 		},
 
 		liitem2: {
 			borderBottomWidth: 1,
-			paddingTop:23,
-			paddingBottom:23,
-			backgroundColor: 'powderblue'
+			paddingTop:10,
+			paddingBottom:20,
+			backgroundColor: '#EEEEEE'
 		},
 
 

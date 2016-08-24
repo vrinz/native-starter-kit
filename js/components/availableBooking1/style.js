@@ -8,10 +8,10 @@ var { StyleSheet } = React;
 module.exports = StyleSheet.create({
 
 	imgstl1:{
-    width:400,
-		height: 480,
+		width:380,
+		height: 220,
 		alignSelf: 'center',
 		marginTop: 20,
-		marginBottom:0
+		marginBottom:20
 	},
 });

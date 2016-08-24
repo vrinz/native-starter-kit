@@ -12,6 +12,10 @@ import Navigator from 'Navigator';
 
 import Login from './components/login/';
 import Home from './components/home/';
+import AvailableBooking1 from './components/availableBooking1/';
+import AvailableBooking2 from './components/availableBooking2/';
+import AvailableBooking3 from './components/availableBooking3/';
+import AvailableBooking4 from './components/availableBooking4/';
 import BookingList from './components/bookingList/';
 import BookingList1 from './components/bookingList1/';
 import BookingList2 from './components/bookingList2/';
@@ -149,6 +153,14 @@ class AppNavigator extends Component {
                 return <Login navigator={navigator} />;
             case 'home':
                 return <Home navigator={navigator} />;
+            case 'availableBooking1':
+                return <AvailableBooking1 navigator={navigator} />;
+            case 'availableBooking2':
+                return <AvailableBooking2 navigator={navigator} />;    
+            case 'availableBooking3':
+                return <AvailableBooking3 navigator={navigator} />;
+            case 'availableBooking4':
+                return <AvailableBooking4 navigator={navigator} />;
             case 'bookingList':
                 return <BookingList navigator={navigator} />;
             case 'bookingList1':

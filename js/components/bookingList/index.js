@@ -59,16 +59,16 @@ class BookingList extends Component {
                 </View> */}
 
                 <ListItem style={styles.liitem1} onPress={() => this.navigateTo('bookingList1')} >
-                      <Image style={styles.imgstl1} source={require('../../../images/booking-1.png')}></Image>
+                      <Image style={styles.imgstl1} source={require('../../../images/booking-6.png')}></Image>
                 </ListItem>
                 <ListItem style={styles.liitem2} onPress={() => this.navigateTo('bookingList2')} >
-                      <Image style={styles.imgstl2} source={require('../../../images/booking-2.png')}></Image>
+                      <Image style={styles.imgstl2} source={require('../../../images/booking-7.png')}></Image>
                 </ListItem>
                 <ListItem style={styles.liitem1} onPress={() => this.navigateTo('bookingList3')} >
-                      <Image style={styles.imgstl3} source={require('../../../images/booking-3.png')}></Image>
+                      <Image style={styles.imgstl3} source={require('../../../images/booking-8.png')}></Image>
                 </ListItem>
                 <ListItem style={styles.liitem2} onPress={() => this.navigateTo('bookingList4')} >
-                  <Image style={styles.imgstl4} source={require('../../../images/booking-4.png')}></Image>
+                  <Image style={styles.imgstl4} source={require('../../../images/booking-9.png')}></Image>
                 </ListItem>
 
                 </Content>

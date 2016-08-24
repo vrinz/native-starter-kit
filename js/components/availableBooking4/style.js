@@ -8,10 +8,17 @@ var { StyleSheet } = React;
 module.exports = StyleSheet.create({
 
 	imgstl1:{
-    width:400,
-		height: 480,
+		width:380,
+		height: 210,
 		alignSelf: 'center',
-		marginTop: 20,
+		marginTop: 0,
 		marginBottom:0
 	},
+
+	liitem1: {
+		borderBottomWidth: 0,
+		marginTop:20,
+		marginBottom:0,
+		backgroundColor: '#fff'
+	}
 });
