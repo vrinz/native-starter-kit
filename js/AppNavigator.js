@@ -23,10 +23,14 @@ import BookingList3 from './components/bookingList3/';
 import BookingList4 from './components/bookingList4/';
 import App from './components/calendar/';
 import BookingHistories from './components/bookingHistories/';
+import BookingHistories1 from './components/bookingHistories1/';
+import BookingHistories2 from './components/bookingHistories2/';
+import BookingHistories3 from './components/bookingHistories3/';
+import BookingHistories4 from './components/bookingHistories4/';
 import BookingStatus from './components/bookingStatus/';
 import SplashPage from './components/splashscreen/';
 import SideBar from './components/sideBar';
-import Settings from './components/settings';
+import CheckboxForm1 from './components/settings';
 import Logout from './components/logout';
 import { statusBarColor } from "./themes/base-theme";
 
@@ -171,14 +175,20 @@ class AppNavigator extends Component {
                 return <BookingList3 navigator={navigator} />;
             case 'bookingList4':
                 return <BookingList4 navigator={navigator} />;
-            case 'bookingStatus':
-                return <BookingStatus navigator={navigator} />;
             case 'calendar':
                 return <App navigator={navigator} />;
             case 'bookingHistories':
                 return <BookingHistories navigator={navigator} />;
+            case 'bookingHistories1':
+                return <BookingHistories1 navigator={navigator} />;
+            case 'bookingHistories2':
+                return <BookingHistories2 navigator={navigator} />;
+            case 'bookingHistories3':
+                return <BookingHistories3 navigator={navigator} />;
+            case 'bookingHistories4':
+                return <BookingHistories4 navigator={navigator} />;
             case 'settings':
-                return <Settings navigator={navigator} />;
+                return <CheckboxForm1 navigator={navigator} />;
             case 'logout':
                 return <Logout navigator={navigator} />;
             default :

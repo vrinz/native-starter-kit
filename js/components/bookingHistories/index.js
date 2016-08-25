@@ -6,15 +6,25 @@ import { connect } from 'react-redux';
 
 import { openDrawer } from '../../actions/drawer';
 import { popRoute } from '../../actions/route';
+import { closeDrawer } from '../../actions/drawer';
+import { replaceOrPushRoute } from '../../actions/route';
 
-import { Container, Header, Title, Content, Text, Button, Icon } from 'native-base';
+import {Image}  from 'react-native';
+
+import { Container, Header, Title, Content, Text, Button, Icon, View, ListItem, List} from 'native-base';
 
 import myTheme from '../../themes/base-theme';
+import styles from './style';
 
 class BookingHistories extends Component {
 
     popRoute() {
         this.props.popRoute();
+    }
+
+    navigateTo(route) {
+        this.props.closeDrawer();
+        this.props.replaceOrPushRoute(route);
     }
 
     render() {
@@ -25,18 +35,44 @@ class BookingHistories extends Component {
                         <Icon name={'ios-arrow-back'} style={{color: '#fff'}} />
                     </Button>
 
-                    <Title><Text style={{color: '#fff', fontSize: 18}}>Booking Histories</Text></Title>
+                    <Title><Text style={{color: '#fff', fontSize: 18}}>Bookings Histories</Text></Title>
 
                     <Button transparent onPress={this.props.openDrawer}>
                         <Icon name={'ios-menu'} style={{color: '#fff'}} />
                     </Button>
                 </Header>
 
-                <Content padder>
-                    <Text>
-                        Create Something Awesome . . .
-                    </Text>
+                <Content>
+              { /* <View style={{flex: 1}}>
+                   <View style={{height: 202, backgroundColor: 'powderblue'}}>
+                      <Text> testing</Text>
+                      <Text> testing2</Text>
+                      <Text> testing2</Text>
+                      <Text> testing2</Text>
+                      <Text> testing2</Text>
+                   </View>
+                   <View style={{height: 202, backgroundColor: 'skyblue'}}></View>
+                   <View style={{height: 202, backgroundColor: 'powderblue'}}></View>
+                   <View style={{height: 202, backgroundColor: 'skyblue'}}><Text> testing</Text></View>
+                   <View style={{height: 202, backgroundColor: 'powderblue'}}></View>
+                   <View style={{height: 202, backgroundColor: 'skyblue'}}><Text> testing</Text></View>
+                </View> */}
+
+                <ListItem style={styles.liitem1} onPress={() => this.navigateTo('bookingHistories1')} >
+                      <Image style={styles.imgstl1} source={require('../../../images/history-1.png')}></Image>
+                </ListItem>
+                <ListItem style={styles.liitem2} onPress={() => this.navigateTo('bookingHistories2')} >
+                      <Image style={styles.imgstl2} source={require('../../../images/history-2.png')}></Image>
+                </ListItem>
+                <ListItem style={styles.liitem1} onPress={() => this.navigateTo('bookingHistories3')} >
+                      <Image style={styles.imgstl3} source={require('../../../images/history-3.png')}></Image>
+                </ListItem>
+                <ListItem style={styles.liitem2} onPress={() => this.navigateTo('bookingHistories4')} >
+                  <Image style={styles.imgstl4} source={require('../../../images/history-4.png')}></Image>
+                </ListItem>
+
                 </Content>
+
             </Container>
         )
     }
@@ -45,7 +81,9 @@ class BookingHistories extends Component {
 function bindAction(dispatch) {
     return {
         openDrawer: ()=>dispatch(openDrawer()),
-        popRoute: () => dispatch(popRoute())
+        popRoute: () => dispatch(popRoute()),
+        closeDrawer: ()=>dispatch(closeDrawer()),
+        replaceOrPushRoute:(route)=>dispatch(replaceOrPushRoute(route))
     }
 }
 

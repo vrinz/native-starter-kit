@@ -30,9 +30,6 @@ class SideBar extends Component {
                     <ListItem style={styles.liitem} onPress={() => this.navigateTo('bookingList')} >
                         <Text style={styles.text12}>B O O K I N G S    L I S T</Text>
                     </ListItem>
-                    {/*}<ListItem style={styles.liitem} onPress={() => this.navigateTo('bookingStatus')} >
-                        <Text style={styles.text12}>B O O K I N G S    S T A T U S</Text>
-                    </ListItem> */}
                     <ListItem style={styles.liitem} onPress={() => this.navigateTo('bookingHistories')} >
                         <Text style={styles.text12}>B O O K I N G S    H I S T O R I E S</Text>
                     </ListItem>
