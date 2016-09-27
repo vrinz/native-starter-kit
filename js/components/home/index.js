@@ -50,7 +50,7 @@ class Home extends Component {
                       <Image style={styles.imgstl2} source={require('../../../images/av-2.png')}></Image>
                 </ListItem>
                 <ListItem style={styles.liitem1} onPress={() => this.navigateTo('availableBooking3')} >
-                      <Image style={styles.imgstl1} source={require('../../../images/av-3.png')}></Image>
+                      <Image style={styles.imgstl3} source={require('../../../images/av-3.png')}></Image>
                 </ListItem>
                 <ListItem style={styles.liitem2} onPress={() => this.navigateTo('availableBooking4')} >
                       <Image style={styles.imgstl4} source={require('../../../images/av-4.png')}></Image>

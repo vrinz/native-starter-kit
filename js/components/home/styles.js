@@ -32,7 +32,7 @@ module.exports = StyleSheet.create({
 
     imgstl2:{
       width:380,
-      height: 185,
+      height: 200,
       alignSelf: 'center',
       marginTop: 0,
       marginBottom:0

@@ -175,8 +175,8 @@ class AppNavigator extends Component {
                 return <BookingList3 navigator={navigator} />;
             case 'bookingList4':
                 return <BookingList4 navigator={navigator} />;
-            case 'calendar':
-                return <App navigator={navigator} />;
+{   /*         case 'calendar':
+                return <App navigator={navigator} />; */}
             case 'bookingHistories':
                 return <BookingHistories navigator={navigator} />;
             case 'bookingHistories1':

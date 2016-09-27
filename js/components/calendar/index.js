@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { openDrawer } from '../../actions/drawer';
 import { popRoute } from '../../actions/route';
-import { Container, Header, Title, Content, Text, Button, Icon } from 'native-base';
+import { Container, Header, Title, Content, Text, Button, Icon} from 'native-base';
 import myTheme from '../../themes/base-theme';
 
 import React, { Component } from 'react';
@@ -81,6 +81,7 @@ class App extends Component {
           onSwipeNext={() => console.log('Forward SWIPE')}  // eslint-disable-line no-console
         />
         <Text style={{textAlign:'center'}}>Selected Date: {moment(this.state.selectedDate).format('MMMM DD YYYY')}</Text>
+        <Text style={{textAlign:'center'}}>You have 2 bookings on Date: {moment(this.state.selectedDate).format('MMMM DD YYYY')}</Text>
       </View>
     </Container>
     );
