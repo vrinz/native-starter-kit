@@ -12,6 +12,17 @@ import { Container, Content, InputGroup, Input, Button, Icon, View } from 'nativ
 import myTheme from '../../themes/base-theme';
 import styles from './styles';
 
+//var t = require('tcomb-form-native');
+//var Form = t.form.Form;
+
+//var TMS_USERID_KEY = 'KerryTMS_UserId';
+
+//var loginData = t.struct({email_text: t.String, texts: t.String});
+
+
+
+const options = {};
+
 class Login extends Component {
 
     constructor(props) {
@@ -26,12 +37,35 @@ class Login extends Component {
         this.props.replaceRoute(route);
     }
 
+    // _userLogin(){
+    //   var value = this.refs.form.getValue();
+    //   if(value){
+    //     fetch("http://10.0.100.162/Metro/tms-api-v1/Account/Login", {
+    //       method: "POST",
+    //       headers: {
+    //         'Accept': 'application/json',
+    //         'Content-Type': 'application/json'
+    //       },
+    //       body: JSON.stringify({
+    //         username: value.email_text,
+    //         password: value.texts,
+    //       })
+    //     })
+    //     .then((response)) => response.json())
+    //     .then((responseData)) =>{
+    //       Alert.alert("Login Success!"),
+    //       this.replaceRoute("home"),
+    //
+    //     }
+    //   }
+    // }
+
     render() {
         return (
             <Container theme={myTheme}>
                 <View style={styles.container}>
                     <Content>
-                    <Image style={styles.imgstl} source={require('../../../images/metro-limo-logo.png')}></Image>
+                    <Image style={styles.imgstl} source={require('../../../images/syntronic-booking-logo.png')}></Image>
                             <View style={styles.bg}>
                                 <InputGroup style={styles.input}>
                                     <Icon name={'ios-person'} style={{color: '#000'}}  />
@@ -44,6 +78,8 @@ class Login extends Component {
                                         secureTextEntry={true}
                                     />
                                 </InputGroup>
+                              </View>
+                              <View>
                                 <Button style={styles.btn} textStyle={{color: '#fff'}} onPress={() => this.replaceRoute('home')}>
                                     Login
                                 </Button>

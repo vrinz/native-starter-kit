@@ -38,14 +38,14 @@ module.exports = StyleSheet.create({
 
    imgstl:{
      position: 'relative',
-     width: 300,
+     width: 380,
      height: 85,
      alignSelf: 'center',
      marginTop: 160
    },
 
     btn: {
-        marginTop: 20,
+        marginTop: 0,
         alignSelf: 'center'
     }
 });
