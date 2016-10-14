@@ -3,6 +3,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+// import Login from '../components/login';
 
 import { openDrawer } from '../../actions/drawer';
 import { replaceRoute } from '../../actions/route';
@@ -10,7 +11,7 @@ import { replaceOrPushRoute } from '../../actions/route';
 import { closeDrawer } from '../../actions/drawer';
 
 import { Container, Header, Title, Content, View, Text, Button, Icon, List, ListItem } from 'native-base';
-import {Image}  from 'react-native';
+import {Image, Alert, AsyncStorage}  from 'react-native';
 import { Grid, Col, Row } from 'react-native-easy-grid';
 
 import myTheme from '../../themes/base-theme';
@@ -18,8 +19,28 @@ import styles from './styles';
 
 class Home extends Component {
 
-    replaceRoute(route) {
-        this.props.replaceRoute(route);
+  async _userLogout() {
+  try {
+    await AsyncStorage.removeItem(STORAGE_KEY);
+    Alert.alert("Logged Out Successfully!")
+  } catch (error) {
+    console.log('AsyncStorage error: ' + error.message);
+  }
+}
+
+replaceRoute(route) {
+    this.props.replaceRoute(route);
+}
+
+    userLogout(){
+      fetch("http://10.0.100.162/Metro/tms-api-v1/Account/Logout",{
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json',
+        }
+      })
+      .then(this._userLogout());
+      this.replaceRoute('login')
     }
 
     navigateTo(route) {
@@ -31,7 +52,7 @@ class Home extends Component {
         return (
             <Container theme={myTheme}style={{backgroundColor: '#fff'}}>
                 <Header>
-                    <Button transparent onPress={() => this.replaceRoute('login')}>
+                    <Button transparent onPress={() => this.userLogout()}>
                         <Icon name={'ios-person'} style={{color: '#fff'}} />
                     </Button>
 

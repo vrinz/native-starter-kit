@@ -31,7 +31,6 @@ import BookingStatus from './components/bookingStatus/';
 import SplashPage from './components/splashscreen/';
 import SideBar from './components/sideBar';
 import CheckboxForm1 from './components/settings';
-import Logout from './components/logout';
 import { statusBarColor } from "./themes/base-theme";
 
 Navigator.prototype.replaceWithAnimation = function (route) {
@@ -189,8 +188,6 @@ class AppNavigator extends Component {
                 return <BookingHistories4 navigator={navigator} />;
             case 'settings':
                 return <CheckboxForm1 navigator={navigator} />;
-            case 'logout':
-                return <Logout navigator={navigator} />;
             default :
                 return <Login navigator={navigator}  />;
         }
